@@ -1,0 +1,16 @@
+{
+  "name": "p5 Template",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+
+  "postCreateCommand": "npm install",
+  "postStartCommand": "npm run start",
+
+  "forwardPorts": [3000],
+
+  "portsAttributes": {
+    "3000": {
+      "label": "Web Preview",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
